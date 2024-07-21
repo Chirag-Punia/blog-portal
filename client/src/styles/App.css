@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.button-group {
+  display: flex;
+  background-color: #e0e0e0;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.cardImg {
+  height: 200px;
+  width: 328px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#languageSelector {
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.button-group-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #ccc;
+}
+
+.selected {
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+}
+
+/* Topic Selector Styles */
+.topic-selector {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.topic-selector button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.topic-selector button:hover {
+  background-color: #45a049;
+}
+
+/* Card Styles */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.card p {
+  color: #555;
+}
+
+.card .impressions {
+  font-size: 0.9em;
+  color: #999;
+}
+
+.loadbtn {
+  display: flex;
+  justify-content: center;
+}
+
+/* Symmetrical adjustments */
+.xxx {
+  border-radius: 20px;
+  margin: 20px; /* Adjusted to match card margin */
+}
+
+/* Signup Page Styles */
+.wrapper.Signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 300px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.form label {
+  font-size: 0.9em;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  width: 100%;
+  background-color: #d01c28;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center; 
+}
+
+.form button:hover {
+  background-color:#61060c;
+}
+
+.form p {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.form p a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.form p a:hover {
+  text-decoration: underline;
+}
