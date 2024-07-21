@@ -17,7 +17,7 @@ export const UserDetails = () => {
     const init = async () => {
       const token = localStorage.getItem("token");
       const base_url =
-        "Blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+        "http://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
       var config = {
         method: "GET",
         url: `${base_url}/auth/me`,

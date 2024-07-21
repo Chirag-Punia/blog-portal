@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 export const EditBlogForm = () => {
   const { cardID } = useParams();
   const base_url =
-    "Blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+    "http://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
   const [formData, setFormData] = useState();
   const [loading, setLoading] = useState(true);
   const [temp, setTemp] = useState(false);

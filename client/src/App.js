@@ -76,7 +76,7 @@ export const App = () => {
 
 const InitState = () => {
   const base_url =
-    "Blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+    "http://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
   const setAuth = useSetRecoilState(authState);
   const navigate = useNavigate();
   const reactNavigator = useNavigate();
@@ -99,7 +99,7 @@ const InitState = () => {
           const token = localStorage.getItem("token");
           const init = async () => {
             const base_url =
-              "Blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+              "http://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
             var config = {
               method: "GET",
               url: `${base_url}/auth/me`,

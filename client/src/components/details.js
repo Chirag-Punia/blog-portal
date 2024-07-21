@@ -6,7 +6,7 @@ import HTMLComponent from "./HtmlComponent";
 export default function Details() {
   const { idd } = useParams();
   const base_url =
-    "Blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+    "http://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
   const [htmlCode, setHtmlCode] = useState("");
   const [title, setTitle] = useState("");
   const [image, setImage] = useState("");
