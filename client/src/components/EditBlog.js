@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { EditBlogForm } from "./EditBlogForm";
 export const EditBlog = () => {
   const base_url =
-    "http://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+    "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
   const navigate = useNavigate();
   const [editingBlog, setEditingBlog] = useState(false);
   const [cards, setCards] = useState();

@@ -8,7 +8,7 @@ export const VerifierPannel = () => {
   const [cards, setCards] = useState();
   const handleClick = async (e) => {
     const base_url =
-      "http://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+      "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
     var key = e.target.value;
     var config = {
       method: "PATCH",
@@ -35,7 +35,7 @@ export const VerifierPannel = () => {
   };
   const init = async () => {
     const base_url =
-      "http://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+      "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
     var config = {
       method: "GET",
       url: `${base_url}/detail/all`,

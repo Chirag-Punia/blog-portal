@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 const base_url =
-  "http://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+  "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
 export function ForgotPassword() {
   const [email, setEmail] = useState("");
   const [otp, setOtp] = useState("");

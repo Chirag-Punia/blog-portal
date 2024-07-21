@@ -8,7 +8,7 @@ function NewPasswordScreen() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const base_url =
-    "http://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+    "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
   let email = localStorage.getItem("email");
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
