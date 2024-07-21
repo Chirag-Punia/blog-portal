@@ -9,7 +9,7 @@ export const Verify = () => {
   const [verificationCode, setVerificationCode] = useState("");
   const [verificationStatus, setVerificationStatus] = useState("");
   const [otpSent, setOtpSent] = useState(false);
-  const base_url = "http://65.2.144.102:3000";
+  const base_url = "https://blog-portal-4vq3.onrender.com";
 
   const handleInputChange = (event) => {
     setMobileNumber(event.target.value);

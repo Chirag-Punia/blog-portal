@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { EditBlogForm } from "./EditBlogForm";
 export const EditBlog = () => {
-  const base_url = "http://65.2.144.102:3000";
+  const base_url = "https://blog-portal-4vq3.onrender.com";
   const navigate = useNavigate();
   const [editingBlog, setEditingBlog] = useState(false);
   const [cards, setCards] = useState();

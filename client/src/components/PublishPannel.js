@@ -7,7 +7,7 @@ export const PublishPannel = () => {
   const [useer, setuseer] = useState({});
   const [cards, setCards] = useState();
   const handleClick = async (e) => {
-    const base_url = "http://65.2.144.102:3000";
+    const base_url = "https://blog-portal-4vq3.onrender.com";
     var key = e.target.value;
     var config = {
       method: "PATCH",
@@ -33,7 +33,7 @@ export const PublishPannel = () => {
     });
   };
   const init = async () => {
-    const base_url = "http://65.2.144.102:3000";
+    const base_url = "https://blog-portal-4vq3.onrender.com";
     var config = {
       method: "GET",
       url: `${base_url}/detail/all`,

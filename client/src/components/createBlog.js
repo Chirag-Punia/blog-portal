@@ -5,7 +5,7 @@ import "../styles/Creator.css";
 
 export const CreateBlog = () => {
   const token = localStorage.getItem("token");
-  const base_url = "http://65.2.144.102:3000";
+  const base_url = "https://blog-portal-4vq3.onrender.com";
   const [formData, setFormData] = useState({
     image: "",
     title: "",

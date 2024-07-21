@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 export const EditBlogForm = () => {
   const { cardID } = useParams();
-  const base_url = "http://65.2.144.102:3000";
+  const base_url = "https://blog-portal-4vq3.onrender.com";
   const [formData, setFormData] = useState();
   const [loading, setLoading] = useState(true);
   const [temp, setTemp] = useState(false);

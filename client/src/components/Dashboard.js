@@ -8,7 +8,7 @@ const Dashboard = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     const init = async () => {
-      const base_url = "http://65.2.144.102:3000";
+      const base_url = "https://blog-portal-4vq3.onrender.com";
       var config = {
         method: "GET",
         url: `${base_url}/auth/me`,
