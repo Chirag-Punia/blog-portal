@@ -5,8 +5,7 @@ import { useState } from "react";
 import HTMLComponent from "./HtmlComponent";
 export default function Details() {
   const { idd } = useParams();
-  const base_url =
-    "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+  const base_url = "http://65.2.144.102:3000";
   const [htmlCode, setHtmlCode] = useState("");
   const [title, setTitle] = useState("");
   const [image, setImage] = useState("");

@@ -6,8 +6,7 @@ import axios from "axios";
 const Home = () => {
   const [cards, setCards] = useState();
   const [loading, setLoading] = useState(true);
-  const base_url =
-    "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+  const base_url = "http://65.2.144.102:3000";
   const init = async () => {
     await axios.post(`${base_url}/blog/data`).then((res) => {
       setCards(res.data.cards);

@@ -9,8 +9,7 @@ export const Verify = () => {
   const [verificationCode, setVerificationCode] = useState("");
   const [verificationStatus, setVerificationStatus] = useState("");
   const [otpSent, setOtpSent] = useState(false);
-  const base_url =
-    "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+  const base_url = "http://65.2.144.102:3000";
 
   const handleInputChange = (event) => {
     setMobileNumber(event.target.value);

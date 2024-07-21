@@ -8,8 +8,7 @@ export const AdminPannel = () => {
   const [useer, setuseer] = useState({});
   const [cards, setCards] = useState();
   const handleClick2 = async (e) => {
-    const base_url =
-      "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+    const base_url = "http://65.2.144.102:3000";
     var key = e.target.value;
     var config = {
       method: "PATCH",
@@ -35,8 +34,7 @@ export const AdminPannel = () => {
     });
   };
   const handleClick = async (e) => {
-    const base_url =
-      "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+    const base_url = "http://65.2.144.102:3000";
     var key = e.target.value;
     var config = {
       method: "PATCH",
@@ -60,8 +58,7 @@ export const AdminPannel = () => {
     });
   };
   const deleteUser = async (e) => {
-    const base_url =
-      "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+    const base_url = "http://65.2.144.102:3000";
     var key = e.target.value;
     var config = {
       method: "DELETE",
@@ -79,8 +76,7 @@ export const AdminPannel = () => {
     });
   };
   const handleClick3 = async (e) => {
-    const base_url =
-      "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+    const base_url = "http://65.2.144.102:3000";
     var key = e.target.value;
     var config = {
       method: "POST",
@@ -98,8 +94,7 @@ export const AdminPannel = () => {
     });
   };
   const deleteBlog = async (e) => {
-    const base_url =
-      "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+    const base_url = "http://65.2.144.102:3000";
     var key = e.target.value;
     var config = {
       method: "DELETE",
@@ -115,8 +110,7 @@ export const AdminPannel = () => {
     });
   };
   const init = async () => {
-    const base_url =
-      "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+    const base_url = "http://65.2.144.102:3000";
     var config = {
       method: "GET",
       url: `${base_url}/detail/all`,

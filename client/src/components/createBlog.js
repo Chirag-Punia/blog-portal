@@ -5,8 +5,7 @@ import "../styles/Creator.css";
 
 export const CreateBlog = () => {
   const token = localStorage.getItem("token");
-  const base_url =
-    "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+  const base_url = "http://65.2.144.102:3000";
   const [formData, setFormData] = useState({
     image: "",
     title: "",

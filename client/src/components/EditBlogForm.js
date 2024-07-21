@@ -5,8 +5,7 @@ import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 export const EditBlogForm = () => {
   const { cardID } = useParams();
-  const base_url =
-    "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+  const base_url = "http://65.2.144.102:3000";
   const [formData, setFormData] = useState();
   const [loading, setLoading] = useState(true);
   const [temp, setTemp] = useState(false);

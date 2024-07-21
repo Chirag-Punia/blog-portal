@@ -7,8 +7,7 @@ const NewsLetter = () => {
   const [email, setEmail] = useState("");
   const reactNavigator = useNavigate();
   const [message, setMessage] = useState("");
-  const base_url =
-    "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+  const base_url = "http://65.2.144.102:3000";
   const handleSubmit = async (e) => {
     e.preventDefault();
 

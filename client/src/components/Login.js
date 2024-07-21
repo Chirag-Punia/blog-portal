@@ -4,8 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const Login = () => {
-  const base_url =
-    "https://blogportalnode.eba-am6kumua.ap-south-1.elasticbeanstalk.com";
+  const base_url = "http://65.2.144.102:3000";
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const reactNavigator = useNavigate();
