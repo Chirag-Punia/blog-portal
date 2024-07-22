@@ -5,7 +5,7 @@ import { useState } from "react";
 import HTMLComponent from "./HtmlComponent";
 export default function Details() {
   const { idd } = useParams();
-  const base_url = "https://blog-portal-4vq3.onrender.com";
+  const base_url = "http://65.0.29.38:4000";
   const [htmlCode, setHtmlCode] = useState("");
   const [title, setTitle] = useState("");
   const [image, setImage] = useState("");

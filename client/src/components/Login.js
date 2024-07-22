@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const Login = () => {
-  const base_url = "https://blog-portal-4vq3.onrender.com";
+  const base_url = "http://65.0.29.38:4000";
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const reactNavigator = useNavigate();

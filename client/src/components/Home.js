@@ -6,7 +6,7 @@ import axios from "axios";
 const Home = () => {
   const [cards, setCards] = useState();
   const [loading, setLoading] = useState(true);
-  const base_url = "https://blog-portal-4vq3.onrender.com";
+  const base_url = "http://65.0.29.38:4000";
   const init = async () => {
     await axios.post(`${base_url}/blog/data`).then((res) => {
       setCards(res.data.cards);

@@ -7,7 +7,7 @@ const NewsLetter = () => {
   const [email, setEmail] = useState("");
   const reactNavigator = useNavigate();
   const [message, setMessage] = useState("");
-  const base_url = "https://blog-portal-4vq3.onrender.com";
+  const base_url = "http://65.0.29.38:4000";
   const handleSubmit = async (e) => {
     e.preventDefault();
 

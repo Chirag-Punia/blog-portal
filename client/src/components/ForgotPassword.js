@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-const base_url = "https://blog-portal-4vq3.onrender.com";
+const base_url = "http://65.0.29.38:4000";
 export function ForgotPassword() {
   const [email, setEmail] = useState("");
   const [otp, setOtp] = useState("");

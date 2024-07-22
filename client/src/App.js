@@ -75,7 +75,7 @@ export const App = () => {
 };
 
 const InitState = () => {
-  const base_url = "https://blog-portal-4vq3.onrender.com";
+  const base_url = "http://65.0.29.38:4000";
   const setAuth = useSetRecoilState(authState);
   const navigate = useNavigate();
   const reactNavigator = useNavigate();
@@ -97,7 +97,7 @@ const InitState = () => {
           setAuth({ token: res.data.token, user: res.data.user });
           const token = localStorage.getItem("token");
           const init = async () => {
-            const base_url = "https://blog-portal-4vq3.onrender.com";
+            const base_url = "http://65.0.29.38:4000";
             var config = {
               method: "GET",
               url: `${base_url}/auth/me`,
