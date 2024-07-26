@@ -7,7 +7,7 @@ export const VerifierPannel = () => {
   const [useer, setuseer] = useState({});
   const [cards, setCards] = useState();
   const handleClick = async (e) => {
-    const base_url = "http://65.0.29.38:4000";
+    const base_url = "https://blog-portal-b02m.onrender.com";
     var key = e.target.value;
     var config = {
       method: "PATCH",
@@ -33,7 +33,7 @@ export const VerifierPannel = () => {
     });
   };
   const init = async () => {
-    const base_url = "http://65.0.29.38:4000";
+    const base_url = "https://blog-portal-b02m.onrender.com";
     var config = {
       method: "GET",
       url: `${base_url}/detail/all`,

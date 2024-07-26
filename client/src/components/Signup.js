@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const Signup = () => {
-  const base_url = "http://65.0.29.38:4000";
+  const base_url = "https://blog-portal-b02m.onrender.com";
   const reactNavigator = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();

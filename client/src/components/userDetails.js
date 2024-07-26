@@ -16,7 +16,7 @@ export const UserDetails = () => {
   useEffect(() => {
     const init = async () => {
       const token = localStorage.getItem("token");
-      const base_url = "http://65.0.29.38:4000";
+      const base_url = "https://blog-portal-b02m.onrender.com";
       var config = {
         method: "GET",
         url: `${base_url}/auth/me`,

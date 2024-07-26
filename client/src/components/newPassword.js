@@ -7,7 +7,7 @@ function NewPasswordScreen() {
   const reactNavigator = useNavigate();
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const base_url = "http://65.0.29.38:4000";
+  const base_url = "https://blog-portal-b02m.onrender.com";
   let email = localStorage.getItem("email");
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
