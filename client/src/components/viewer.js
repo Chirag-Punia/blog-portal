@@ -13,17 +13,24 @@ export const Viewer = () => {
   return (
     <>
       <nav className={"container"}>
-        <img src={logo} alt="logo" />
+        <img className="temp" src={logo} alt="logo" onClick={() => {
+        localStorage.removeItem("token");
+        reactNavigator("/login");
+      }}/>
         <ul>
-          <li>Home</li>
-          <li>Community</li>
-          <li>Events</li>
-          <li>Blogs</li>
-          <li>About Us</li>
+          <li onClick={() => reactNavigator("/")}>Home</li>
+          <li onClick={() => reactNavigator("/community")}>Community</li>
+          <li onClick={() => reactNavigator("/events")}>Events</li>
+          <li onClick={() => reactNavigator("/blogs")}>Blogs</li>
+          <li onClick={() => reactNavigator("/about")}>About Us</li>
         </ul>
-        <button onClick={() => {
-    reactNavigator("/newsletter");
-        }}>Join Waitlist</button>
+        <button
+          onClick={() => {
+            reactNavigator("/newsletter");
+          }}
+        >
+          Join Waitlist
+        </button>
         <button
           onClick={() => {
             reactNavigator("/userDetails");

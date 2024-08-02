@@ -15,7 +15,10 @@ const Admin = () => {
   return (
     <>
       <nav className={"container"}>
-        <img src={logo} alt="logo" />
+        <img className="temp" src={logo} alt="logo" onClick={() => {
+        localStorage.removeItem("token");
+        reactNavigator("/login");
+      }}/>
         <ul>
           <li>Home</li>
           <li>Community</li>

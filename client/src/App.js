@@ -28,6 +28,7 @@ import { ForgotPassword } from "./components/ForgotPassword";
 import NewPasswordScreen from "./components/newPassword";
 import Newsletter from "./components/Newsletter";
 import { Verify } from "./components/Verify";
+import Nav from "./components/Nav";
 export const App = () => {
   return (
     <>
@@ -48,8 +49,24 @@ export const App = () => {
           <InitState />
           <Routes>
             <Route path="/:role/details/:idd" element={<Details />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
+            <Route
+              path="/login"
+              element={
+                <>
+                  <Nav />
+                  <Login />
+                </>
+              }
+            />
+            <Route
+              path="/signup"
+              element={
+                <>
+                  <Nav />
+                  <Signup />
+                </>
+              }
+            />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/viewer" element={<Viewer />} />
             <Route path="/userDetails" element={<UserDetails />} />

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import "../styles/Signup.css";
 import { toast } from "react-toastify";
 
 const Signup = () => {
@@ -48,14 +49,6 @@ const Signup = () => {
   const [dob, setDob] = useState();
   return (
     <>
-      <button
-        onClick={() => {
-          localStorage.removeItem("token");
-          reactNavigator("/login");
-        }}
-      >
-        Home
-      </button>
       <div className="wrapper Signup">
         <div className="form">
           <div className="heading">Create an Account</div>
@@ -112,14 +105,18 @@ const Signup = () => {
             </div>
             <div className="form-group">
               <label>Gender</label>
-              <input
-                type="text"
-                placeholder="Enter Gender"
+              <select
                 onChange={(e) => {
                   setGender(e.target.value);
                 }}
-              />
+              >
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="prefer not to say">Prefer not to say</option>
+              </select>
             </div>
+
             <div className="form-group">
               <label>Phone Number</label>
               <input
@@ -133,7 +130,7 @@ const Signup = () => {
             <div className="form-group">
               <label>Date of Birth</label>
               <input
-                type="text"
+                type="date"
                 placeholder="Enter Date of Birth"
                 onChange={(e) => {
                   setDob(e.target.value);
@@ -145,9 +142,6 @@ const Signup = () => {
             </button>
             <p className="pp">
               Have an Account ?<Link to="/login">Log in</Link>
-            </p>
-            <p className="pp">
-              <Link to="/verify">Verify your Mobile Number</Link>
             </p>
           </form>
         </div>

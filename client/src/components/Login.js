@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
+import "../styles/Login.css"
 
 const Login = () => {
   const base_url = "https://blog-portal-b02m.onrender.com";

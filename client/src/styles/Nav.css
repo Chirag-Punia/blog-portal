@@ -22,7 +22,7 @@ button {
 }
 .container {
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1420px;
 
 }
 
@@ -38,4 +38,16 @@ nav ul {
     list-style: none;
     gap: 24px;
 }
+nav li{
+    cursor: pointer; 
+  transition: color 0.3s; 
+}
+nav ul li:hover {
+    color: #007bff; /* Optional: Changes text color on hover */
+  }
 
+.temp{
+    width: 25vh;
+    cursor: pointer; 
+  transition: color 0.3s; 
+}
