@@ -36,3 +36,23 @@
     margin-top: 10px;
     color: red;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Add mobile-specific styles below */
+    body {
+        font-size: 90%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .container {
+        padding: 10px;
+    }
+    .nav-bar, .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+    
