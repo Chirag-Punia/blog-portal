@@ -1,3 +1,13 @@
+If you want to sign in as **publisher then:
+email : publi@publi.com
+password : 123
+If you want to sign in as **verifier then:
+email : verifier@verifier.com
+password : 123
+If you want to sign in as **admin then:
+email : admin@admin.com
+password : 123
+
 # **Blog Portal Application**
 
 ### **Introduction to the Project**
